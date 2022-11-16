@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'lexend', sans-serif ;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 400;
+}
+
+main{
+  width: 100%;
+  max-width: 1000px;
+  min-height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+main article:first-child{
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+main article:first-child button{
+  color: hsl(31, 77%, 52%);
+}
+
+main article:nth-child(2){
+  background-color: hsl(184, 100%, 22%);
+}
+
+main article:nth-child(2) button{
+  color: hsl(184, 100%, 22%);
+}
+
+main article:last-child{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+main article:last-child button{
+  color: hsl(179, 100%, 13%);
+}
+
+main article img{
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+main article{
+  padding: 2.5rem;
+}
+
+main article h2{
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+main article p{
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4.5rem;
+  padding-right: 1rem;
+  line-height: 1.5rem;
+}
+
+main article button{
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 6rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border, color 0.3s;
+}
+
+main article button:hover{
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+
+footer{
+  padding: 2rem;
+  margin-top: -50px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 600px) {
+  main{
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  main article:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+
+  main article:last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+
+  footer{
+    margin-top: 0px;
+  }
+}
